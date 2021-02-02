@@ -9,7 +9,10 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');                        //Homepage
 var propertyListingRouter = require('./routes/propertyListing');    //Property Listing
 var aboutRouter = require('./routes/about');                        //About
+<<<<<<< HEAD
 var propertiesRouter = require('./routes/properties');
+=======
+>>>>>>> 6052a71c6933978fd2aaa5f95ca472de9b0d2a8d
 var searchResultsRouter = require('./routes/searchResults');        //Search Results
 var contactRouter = require('./routes/contact');                    //Contact
 
@@ -32,7 +35,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);                              //Homepage
 app.use('/propertylisting', propertyListingRouter);     //Property Listing
 app.use('/about', aboutRouter);                         //About
+<<<<<<< HEAD
 app.use('/properties', propertiesRouter);               //Properties     
+=======
+>>>>>>> 6052a71c6933978fd2aaa5f95ca472de9b0d2a8d
 app.use('/searchresults', searchResultsRouter);         //Search Results
 app.use('/contact', contactRouter);                     //Contact
 
